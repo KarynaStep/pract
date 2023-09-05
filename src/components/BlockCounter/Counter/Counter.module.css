@@ -1,0 +1,13 @@
+.calculator {
+  text-align: center;
+}
+.countSection {
+  padding: 10px;
+  background-color: rgb(254, 246, 237);
+  border: 1px gray solid;
+}
+.autoClick {
+  padding: 5px;
+  background-color: rgb(253, 226, 196);
+  border: 1px rgb(111, 111, 111) solid;
+}
