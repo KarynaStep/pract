@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import CounterParameters from "./CounterParameters";
 import styles from "./Counter.module.css";
 
@@ -60,8 +61,6 @@ class Counter extends Component {
     }
   }
 
-  // componentWillUnmount() {}
-
   render() {
     const { count } = this.state;
     const { step, subtraction } = this.props;
@@ -105,5 +104,19 @@ class Counter extends Component {
     );
   }
 }
+
+Counter.propTypes = {
+  step: PropTypes.number.isRequired,
+  subtraction: PropTypes.bool.isRequired,
+  setSelectStep: PropTypes.func.isRequired,
+  setSelectSubtraction: PropTypes.func.isRequired,
+};
+
+Counter.defaultProps = {
+  step: 0,
+  subtraction: true,
+  setSelectStep: () => {},
+  setSelectSubtraction: () => {},
+};
 
 export default Counter;

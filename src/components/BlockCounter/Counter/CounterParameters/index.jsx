@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import styles from "./CounterParameters.module.css";
 
 class CounterParameters extends Component {
@@ -35,5 +36,18 @@ class CounterParameters extends Component {
     );
   }
 }
+CounterParameters.propTypes = {
+  step: PropTypes.number.isRequired,
+  subtraction: PropTypes.bool.isRequired,
+  setSelectStep: PropTypes.func.isRequired,
+  setSelectSubtraction: PropTypes.func.isRequired,
+};
+
+CounterParameters.defaultProps = {
+  step: 0,
+  subtraction: true,
+  setSelectStep: () => {},
+  setSelectSubtraction: () => {},
+};
 
 export default CounterParameters;
