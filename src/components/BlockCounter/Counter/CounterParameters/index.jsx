@@ -3,6 +3,12 @@ import PropTypes from "prop-types";
 import styles from "./CounterParameters.module.css";
 
 class CounterParameters extends Component {
+  /**
+   * @param {number} props.step
+   * @param {boolean} props.subtraction
+   * @param {function} props.setSelectStep
+   * @param {function} props.setSelectSubtraction
+   */
   constructor(props) {
     super(props);
   }
@@ -18,7 +24,7 @@ class CounterParameters extends Component {
   };
 
   render() {
-    const {step} = this.props;
+    const { step } = this.props;
 
     return (
       <section className={styles.stepSection}>

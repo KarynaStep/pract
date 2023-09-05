@@ -3,7 +3,10 @@ import React, { Component } from "react";
 import Counter from "./Counter";
 import styles from "./BlockCounter..module.css";
 
+
 class BlockCounter extends Component {
+  
+
   constructor(props) {
     super(props);
     this.state = {
@@ -18,7 +21,6 @@ class BlockCounter extends Component {
   setSelectSubtraction = (subtraction) => {
     this.setState({ subtraction: !subtraction });
   };
-  
 
   render() {
     return (

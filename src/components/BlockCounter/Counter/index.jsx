@@ -4,6 +4,12 @@ import CounterParameters from "./CounterParameters";
 import styles from "./Counter.module.css";
 
 class Counter extends Component {
+  /**
+   * @param {number} props.step
+   * @param {boolean} props.subtraction
+   * @param {function} props.setSelectStep
+   * @param {function} props.setSelectSubtraction
+   */
   constructor(props) {
     super(props);
     this.state = {
